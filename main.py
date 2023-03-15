@@ -1,25 +1,20 @@
+#Number Guessing game
+hidden_number = 9
+guess_count = 0
 
-#basic calculator
-first_number = input("First number is ")
-second_number = input("Second number is ")
-calculation_type = input("what would you like to do? (+,-,*,/) ")
-
-add_numbers = float(first_number) + float(second_number)
-subtract_numbers = float(first_number) - float(second_number)
-multiply_numbers = float(first_number) * float(second_number)
-divide_numbers = float(first_number) / float(second_number)
-
-if calculation_type == "+":
-  print(add_numbers)
-elif calculation_type == "-":
-  print(subtract_numbers)
-elif calculation_type == "*":
-  print(multiply_numbers)
-elif calculation_type == "/":
-  print(divide_numbers)
-else:
-  print("Try again!")
-
-
-
+while guess_count < 3:
+  guess = int(input("Guess the number: "))
+  guess_count += 1
+  
+  if guess != hidden_number and guess_count < 3:
+    print("Try again!")
+    
+  elif guess == hidden_number:
+    print("You got it!")
+    break
+    
+  else:
+    guess_count == 3
+    print("You ran out of guesses!")
+    print("Game Over!")
 

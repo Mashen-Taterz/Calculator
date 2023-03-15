@@ -4,6 +4,8 @@ for i in range(10):
         continue
     print(i)
 
+
+
 patient_name = input("What is your name? ")
 patient_age = input("How old are you? ")
 is_new_patient = input("Are you a new patient? (y/n) ")
@@ -18,3 +20,9 @@ if is_new_patient == True:
   print("Welcome!")
 else: 
   print("Welcome Back!")
+
+
+name = input("What is your name? ")
+fav_color = input("What is your favorite color? ")
+
+print("{name}'s favorite color is {fav_color}")
